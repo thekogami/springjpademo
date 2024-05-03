@@ -22,12 +22,4 @@ public class Professor {
     public Professor(String nome){
         this.nome = nome;
     }
-
-    @Override
-    public String toString() {
-        return "Professor{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                '}';
-    }
 }

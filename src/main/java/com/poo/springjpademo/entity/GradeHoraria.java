@@ -6,11 +6,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class GradeHoraria {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,4 +32,7 @@ public class GradeHoraria {
 
     @ManyToOne
     private Turma turma;
+
+    public GradeHoraria(String s) {
+    }
 }
